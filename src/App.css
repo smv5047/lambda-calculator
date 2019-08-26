@@ -49,6 +49,16 @@
     border-color: black;
 }
 
+.Button:hover {
+    filter: brightness(150%)
+}
+
+.Button:active {
+    filter: brightness(200%);
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
 .number {
     background: #184379;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers"
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators"
@@ -18,19 +18,25 @@ function App() {
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
-
+  const [total, setTotal, items]= useState(0);
+  
+  const changeTotal = () => {
+    setTotal(total +items)
+  }
+  
+  
   return (
     <div className="container">
-      <Logo />
+      <Logo className='logo'/>
       <div className="App">
-        <Display />
+        <Display total ={total}/>
         <div className ="buttonPanel">
           <div className ="leftButtons">
-            <Specials />
-            <Numbers />
+            <Specials total ={total} changeTotal={changeTotal}/>
+            <Numbers total ={total} changeTotal={changeTotal} />
           </div>
           <div className ="rightButtons">
-            <Operators />
+            <Operators total={total} changeTotal={changeTotal} numbers={items}/>
           </div>
         </div>
         
