@@ -8,7 +8,7 @@ import NumberButton from './NumberButton';
 import { numbers } from "../../../data";
 
 
-export const Numbers = () => {
+const Numbers = () => {
   // STEP 2 - add the imported data to state
   const [numberState, setNumberState] = useState(numbers);
   
@@ -26,3 +26,5 @@ export const Numbers = () => {
     </div>
   );
 };
+
+export default Numbers

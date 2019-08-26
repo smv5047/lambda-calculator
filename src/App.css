@@ -1,3 +1,51 @@
-.numberButton {
-    color: red;
+.container {
+    height: 700px;
+    width: 475px;
+    background: #A71E37;
+    border: solid 3px black;
+    border-radius: 5px;
+    margin: 100px auto;
+}
+
+.display {
+    display: block;
+    width: 76%;
+    height: 38%;
+    font-size: 3rem;
+    background: #323336;
+    color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 40px;
+    padding: 20px;
+    text-align: end;
+}
+
+.Button {
+    color:white;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    padding: 10px;
+    font-size: 1.5rem;
+    box-shadow: -1px 3px 3px 0px black;
+    margin: .25rem 1rem;
+    border-color: black;
+}
+
+.number {
+    background: #184379;
+}
+
+.special {
+    background: #225C9D;
+}
+
+.operator {
+    background: #247293;
+}
+
+.logo {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
 }
