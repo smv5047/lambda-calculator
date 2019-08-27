@@ -18,11 +18,9 @@ function App(props) {
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
-  const [total, setTotal, items] = useState([]);
+  const [total, setTotal, items] = useState([0]);
   const { numbers } = props;
-  // const changeTotal = () => {
-  //   setTotal(props.total)
-  // }
+ 
   
   
   return (
@@ -36,7 +34,7 @@ function App(props) {
             <Numbers total ={total} setTotal={setTotal}/>
           </div>
           <div className ="rightButtons">
-            <Operators total={total} setTotal={setTotal} numbers={items}/>
+            <Operators total={total} setTotal={setTotal}/>
           </div>
         </div>
         
